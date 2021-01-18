@@ -1,0 +1,39 @@
+productName: '图片压缩'
+appId: 'me.erguotou.optmize.image'
+# author:
+#   name: 'erguotou'
+#   email: 'erguotou525@gmail.com'
+compression: 'maximum'
+# license: 'MIT'
+electronDownload:
+  mirror: 'https://npm.taobao.org/mirrors/electron/'
+files:
+  [
+    '!node_modules',
+    'node_modules/svgo',
+    'node_modules/coa',
+    'node_modules/css-select',
+    'node_modules/css-select-base-adapter',
+    'node_modules/css-tree',
+    'node_modules/csso',
+    'node_modules/js-yaml',
+    'node_modules/mkdirp',
+    'node_modules/object.values',
+    'node_modules/sax',
+    'node_modules/stable',
+    'node_modules/unquote',
+    'node_modules/util.promisify',
+    'dist/main/**',
+    'dist/render/**'
+  ]
+mac:
+  artifactName: '${productName}_setup_${version}.${ext}'
+  target: ['dmg']
+win:
+  target: [{ target: 'nsis', arch: ['x64'] }]
+  artifactName: '${productName}_setup_${version}.${ext}'
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  deleteAppDataOnUninstall: false

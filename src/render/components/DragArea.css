@@ -1,0 +1,7 @@
+.drag-area {
+  @apply flex flex-col items-center justify-center border border-gray-400 text-gray-400 border-dashed bg-gray-50;
+}
+
+.draging .drag-area {
+  @apply bg-gray-300;
+}
