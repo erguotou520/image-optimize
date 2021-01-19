@@ -10,19 +10,11 @@ electronDownload:
 files:
   [
     '!node_modules',
-    'node_modules/svgo',
-    'node_modules/coa',
-    'node_modules/css-select',
-    'node_modules/css-select-base-adapter',
-    'node_modules/css-tree',
-    'node_modules/csso',
-    'node_modules/js-yaml',
-    'node_modules/mkdirp',
-    'node_modules/object.values',
-    'node_modules/sax',
-    'node_modules/stable',
-    'node_modules/unquote',
-    'node_modules/util.promisify',
+    'node_modules/{svgo,coa,css-select,css-select-base-adapter,css-tree,csso,js-yaml,mkdirp,object.values,sax,stable,unquote,util.promisify,@types/q,q,color-convert,ansi-styles,escape-string-regexp,supports-color,color-name,has-flag,boolbase,css-what,domutils,nth-check,dom-serializer,domelementtype,entities,mdn-data,source-map,argparse,esprima,sprintf-js,minimist,call-bind,define-properties,es-abstract,has,function-bind,get-intrinsic,has-symbols,object-keys,es-to-primitive,is-callable,is-negative-zero,is-regex,object-inspect,object.assign,string.prototype.trimend,string.prototype.trimstart,is-date-object,is-symbol,object.getownpropertydescriptors}/**/*',
+    '!node_modules/**/@types/**/*.*',
+    '!**/*.{md,markdown,MD,txt}',
+    '!**/{test.js,license,LICENSE*,.jscsrc,Makefile,demo}',
+    '!**/sample?(s)${/*}',
     'dist/main/**',
     'dist/render/**'
   ]
